@@ -20,6 +20,7 @@ html {
 }
 
 header {
+  // colors and font styles
   background-color: #1F2937;
   h2{
     font-size: 48px;
@@ -37,12 +38,40 @@ header {
   button {
     background-color: #3882F6;
   }
+
+  //Flexbox
+  display: flex;
+  flex-direction: column;
+
+  .top-container {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .bottom-container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .ih {
   font-size: 36px;
   font-weight: bolder;
   color: #1F2937;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+
+  .img-group-container {
+    display: flex;
+  }
 }
 
 .second {
@@ -53,12 +82,24 @@ header {
   p{
     color: #1F2937;
   }
+
+  display: flex;
+  justify-content: center;
 }
 
-.first-level-container {
-  background-color: #3882F6;
+.third {
+  display: flex;
+  justify-content: center;
+
+  .first-level-container {
+    background-color: #3882F6;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 footer {
   background-color: #1F2937;
+  display: flex;
+  justify-content: center;
 }

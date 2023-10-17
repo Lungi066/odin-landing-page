@@ -25,6 +25,8 @@ html {
 
 header {
   background-color: #1F2937;
+  display: flex;
+  flex-direction: column;
 }
 header h2 {
   font-size: 48px;
@@ -42,6 +44,18 @@ header .hl {
 header button {
   background-color: #3882F6;
 }
+header .top-container {
+  display: flex;
+  justify-content: space-between;
+}
+header .top-container ul {
+  display: flex;
+  justify-content: space-between;
+}
+header .bottom-container {
+  display: flex;
+  justify-content: space-between;
+}
 
 .ih {
   font-size: 36px;
@@ -49,19 +63,37 @@ header button {
   color: #1F2937;
 }
 
+.first {
+  display: flex;
+  flex-direction: column;
+}
+.first .img-group-container {
+  display: flex;
+}
+
 .second {
   background-color: #E5E7EB;
   font-size: 36px;
   font-family: "the sans light- italic";
+  display: flex;
+  justify-content: center;
 }
 .second p {
   color: #1F2937;
 }
 
-.first-level-container {
+.third {
+  display: flex;
+  justify-content: center;
+}
+.third .first-level-container {
   background-color: #3882F6;
+  display: flex;
+  justify-content: center;
 }
 
 footer {
   background-color: #1F2937;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
