@@ -11,7 +11,6 @@ a { text-decoration: none; }
 
 body {
   background: white;
-  height: 300vh;
 }
  
 html {
@@ -37,6 +36,9 @@ header {
   }
   button {
     background-color: #3882F6;
+    border-radius: 4px;
+    padding: 5px;
+    color: white;
   }
 
   //Flexbox
@@ -46,16 +48,34 @@ header {
   .top-container {
     display: flex;
     justify-content: space-between;
+    margin: 10px 100px;
 
     ul {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
+      gap: 20px;
     }
   }
 
   .bottom-container {
     display: flex;
     justify-content: space-between;
+    margin: 60px 100px;
+
+    .bottom-left-container {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      width: 500px;
+      button { width: 60px;}
+      p { flex-wrap: wrap;}
+    }
+
+    .p2 {
+      padding: 60px;
+      background-color: grey;
+      border-radius: 5px;
+    }
   }
 }
 
@@ -68,19 +88,53 @@ header {
 .first {
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+  .ih {
+    align-self: center;
+    margin: 50px;
+  }
 
   .img-group-container {
     display: flex;
+    align-self: center;
+    margin: 50px 150px 100px;
+
+    .pic {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      p {
+        flex-wrap: wrap;
+      }
+
+      img {
+        border: 5px solid #3882F6;
+        width: 125px;
+        height: 125px;
+      }
+    }
   }
+
+
 }
 
 .second {
+  display: flex;
+  flex-direction: column;
   background-color: #E5E7EB;
   font-size: 36px;
   font-family: "the sans light- italic";
+  padding: 100px;
+  flex-wrap: wrap;
 
   p{
     color: #1F2937;
+  }
+
+  .p2 {
+    align-self: flex-end;
+    font-weight: bold;
   }
 
   display: flex;
@@ -95,6 +149,21 @@ header {
     background-color: #3882F6;
     display: flex;
     justify-content: center;
+    padding: 40px 100px;
+    margin: 50px;
+    gap: 100px;
+    border-radius: 8px;
+    p{
+      color: white;
+    }
+
+    button {
+      border: 1px solid white;
+      background-color: #3882F6;
+      color: white;
+      border-radius: 3px;
+      padding: 7px;
+    }
   }
 }
 
@@ -102,4 +171,8 @@ footer {
   background-color: #1F2937;
   display: flex;
   justify-content: center;
+  padding: 20px;
+  p {
+    color: white;
+  }
 }

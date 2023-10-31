@@ -15,7 +15,6 @@ a {
 
 body {
   background: white;
-  height: 300vh;
 }
 
 html {
@@ -43,18 +42,41 @@ header .hl {
 }
 header button {
   background-color: #3882F6;
+  border-radius: 4px;
+  padding: 5px;
+  color: white;
 }
 header .top-container {
   display: flex;
   justify-content: space-between;
+  margin: 10px 100px;
 }
 header .top-container ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 20px;
 }
 header .bottom-container {
   display: flex;
   justify-content: space-between;
+  margin: 60px 100px;
+}
+header .bottom-container .bottom-left-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 500px;
+}
+header .bottom-container .bottom-left-container button {
+  width: 60px;
+}
+header .bottom-container .bottom-left-container p {
+  flex-wrap: wrap;
+}
+header .bottom-container .p2 {
+  padding: 60px;
+  background-color: grey;
+  border-radius: 5px;
 }
 
 .ih {
@@ -66,20 +88,48 @@ header .bottom-container {
 .first {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.first .ih {
+  align-self: center;
+  margin: 50px;
 }
 .first .img-group-container {
   display: flex;
+  align-self: center;
+  margin: 50px 150px 100px;
+}
+.first .img-group-container .pic {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.first .img-group-container .pic p {
+  flex-wrap: wrap;
+}
+.first .img-group-container .pic img {
+  border: 5px solid #3882F6;
+  width: 125px;
+  height: 125px;
 }
 
 .second {
+  display: flex;
+  flex-direction: column;
   background-color: #E5E7EB;
   font-size: 36px;
   font-family: "the sans light- italic";
+  padding: 100px;
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
 }
 .second p {
   color: #1F2937;
+}
+.second .p2 {
+  align-self: flex-end;
+  font-weight: bold;
 }
 
 .third {
@@ -90,10 +140,28 @@ header .bottom-container {
   background-color: #3882F6;
   display: flex;
   justify-content: center;
+  padding: 40px 100px;
+  margin: 50px;
+  gap: 100px;
+  border-radius: 8px;
+}
+.third .first-level-container p {
+  color: white;
+}
+.third .first-level-container button {
+  border: 1px solid white;
+  background-color: #3882F6;
+  color: white;
+  border-radius: 3px;
+  padding: 7px;
 }
 
 footer {
   background-color: #1F2937;
   display: flex;
   justify-content: center;
+  padding: 20px;
+}
+footer p {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
